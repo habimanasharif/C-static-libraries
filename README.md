@@ -24,7 +24,8 @@ A library is a collection of objects that are made availbe for use by other prog
 ```bash
 gcc -c addNumbers.c subNumbers.c // convert to obect files
 ar cr libmath.a addNumbers.o subNumbers.o // create library file  to link objects files
-gcc domath.c -lmath -o domath -I include -L lib -no-pie // complile file with the static libraries
+gcc domath.c -lmath -o domath -I include -L lib -no-pie -static// complile file with the static libraries
+ranlib libmath.a
 ```
 
 
